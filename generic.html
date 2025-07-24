@@ -134,33 +134,39 @@
         <p>Le système s'appuie sur un jeu de données de transactions réelles (anonymisées). Il applique un prétraitement des données avec Pandas, une détection d’anomalies via Random Forest, et une interface interactive développée avec Streamlit. La visualisation des performances est effectuée via Power BI.</p>
       `;
     } else if (id === 'ventes') {
-      contentDiv.innerHTML = `
-        <header class="major">
-          <span class="date">Juillet 2025</span>
-          <h1>Analyse des Ventes</h1>
-          <p>Analyse des ventes d’une entreprise à l’aide de Power BI, Excel, SQL et Python. Suivi des produits, des périodes fortes, et analyse régionale des performances.</p>
-        </header>
-        <div class="image main">
-          <img src="images/dashboard_ventes.png" alt="Dashboard ventes" />
-        </div>
-        <h2>Objectifs</h2>
-        <ul>
-          <li>Suivre l’évolution des ventes par mois, trimestre, année</li>
-          <li>Identifier les top produits et régions</li>
-          <li>Créer des dashboards dynamiques avec KPI</li>
-        </ul>
-        <h2>Outils utilisés</h2>
-        <p>Power BI, Excel, SQL, Python</p>
-        <h2>Lien vers le rapport</h2>
-        <p><a href="https://app.powerbi.com/view?r=TON-LIEN" target="_blank">Voir le rapport Power BI</a></p>
-      `;
-    } else {
-      contentDiv.innerHTML = `
-        <header class="major">
-          <h1>Projet introuvable</h1>
-          <p>Le projet demandé est introuvable. <a href="index.html">Retour à l'accueil</a></p>
-        </header>
-      `;
+     contentDiv.innerHTML = `
+  <header class="major">
+    <span class="date">Juillet 2025</span>
+    <h1>Analyse des Ventes</h1>
+    <p>Analyse des ventes d’une entreprise à l’aide de Power BI, Excel, SQL et Python. Suivi des produits, des périodes fortes, et analyse régionale des performances.</p>
+  </header>
+
+  <div class="dashboard-section" style="text-align: center; margin-bottom: 40px;">
+    <img src="images/dash1 - Copie.png" alt="Page 1 - Vue globale des ventes" style="width: 100%; max-width: 900px; height: auto; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+    <p style="margin-top: 10px;"><strong>Page 1 :</strong> Vue d’ensemble des ventes, satisfaction client, et segmentation par tranche d’âge.</p>
+  </div>
+
+  <div class="dashboard-section" style="text-align: center; margin-bottom: 40px;">
+    <img src="images/dash2 - Copie.png" alt="Page 2 - Analyse géographique" style="width: 100%; max-width: 900px; height: auto; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+    <p style="margin-top: 10px;"><strong>Page 2 :</strong> Analyse géographique des ventes, filtres interactifs par produit, ville et type de client.</p>
+  </div>
+
+  <div class="dashboard-section" style="text-align: center; margin-bottom: 40px;">
+    <img src="images/dash3 - Copie.png" alt="Page 3 - KPI & Évolution" style="width: 100%; max-width: 900px; height: auto; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+    <p style="margin-top: 10px;"><strong>Page 3 :</strong> Suivi des KPI (ventes totales, croissance, satisfaction) avec courbes temporelles.</p>
+  </div>
+
+  <h2>Objectifs</h2>
+  <ul>
+    <li>Suivre l’évolution des ventes par mois, trimestre, année</li>
+    <li>Identifier les top produits et régions</li>
+    <li>Créer des dashboards dynamiques avec KPI</li>
+  </ul>
+
+  <h2>Outils utilisés</h2>
+  <p>Power BI, Excel, Python</p>
+`;
+
     }
   </script>
 
