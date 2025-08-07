@@ -167,7 +167,45 @@
   <p>Power BI, Excel, Python</p>
 `;
 
-    }
+    }    else if (id === 'churn') {
+      contentDiv.innerHTML = `
+        <header class="major">
+          <span class="date">Août 2025</span>
+          <h1>Prédiction du Churn Client</h1>
+          <p>Projet de data science réalisé pour identifier les clients susceptibles de quitter la banque. Utilisation d'algorithmes de machine learning avec Python et visualisation avec Power BI.</p>
+        </header>
+
+        <div class="dashboard-section" style="text-align: center; margin-bottom: 40px;">
+          <img src="images/1.png" alt="Analyse générale du churn" style="width: 100%; max-width: 900px; height: auto; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+          <p style="margin-top: 10px;"><strong>Page 1 :</strong> Vue d'ensemble du churn, segmentation des clients selon l'ancienneté et le comportement bancaire.</p>
+        </div>
+
+        <div class="dashboard-section" style="text-align: center; margin-bottom: 40px;">
+          <img src="images/2.png" alt="Modèle de prédiction" style="width: 100%; max-width: 900px; height: auto; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+          <p style="margin-top: 10px;"><strong>Page 2 :</strong> Résultats du modèle de machine learning (Random Forest) et métriques de performance (accuracy, recall, etc.).</p>
+        </div>
+
+        <div class="dashboard-section" style="text-align: center; margin-bottom: 40px;">
+          <img src="images/3.png" alt="Analyse des facteurs de churn" style="width: 100%; max-width: 900px; height: auto; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+          <p style="margin-top: 10px;"><strong>Page 3 :</strong> Analyse des variables influençant le churn, visualisation par importance des features.</p>
+        </div>
+
+        <h2>Objectifs</h2>
+        <ul>
+          <li>Prédire le départ potentiel des clients</li>
+          <li>Analyser les facteurs clés de départ</li>
+          <li>Mettre en place un dashboard d’analyse décisionnelle</li>
+        </ul>
+
+        <h2>Outils utilisés</h2>
+        <p>Python (Pandas, Scikit-learn), Power BI</p>
+        <p><u>Pour plus de détails :</u>
+          <a href="https://github.com/ashrefhe/churn" target="_blank">
+            voici le lien GitHub du projet
+          </a>.
+        </p>
+      `;
+}
   </script>
 
 </body>
